@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Bosh sahifa{% endblock title %}
+
+{% block content %}
+    <br />
+    <div class="jumbotron">
+        <h1 class="display-4">Assalomu aleykum</h1>
+        <p class="lead">Mening shaxsiy blogimga Xush Kelibsiz</p>
+        <h5>O'zim haqimda ma'lumot</h5>
+        <p>Mening ismim Shahzod. Men Xorazm viloyatida tug'ilganman. Yoshim 20da hozirgi kunda Toshkent Davlat Iqtisodiyot Universitetining 2-kurs talabasiman. Dasrlardan bo'sh vaqtimda Najot Ta'lim o'quv markazida ham o'qiyman. U yerda biz Dasturlashning Python tilini o'rganyapmiz. Darslar juda zo'r o'tilyapti ustozlarning yordami bilan darslarni amaliy hamda nazariy tarzda chuqurroq o'rganyapmiz. Bu mening birinchi loyiham bo'lgani sababli  kamchiliklari uchun Uzr so'rayman</p>
+        <hr class="my-4">
+        <p>Siz bu yerda dasturlashga oid ma'lumotlarni ko'rishingiz mumkin bo'ladi </p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">Postlarning tomosha qilish</a>
+        </p>
+    </div>
+{% endblock content %}
